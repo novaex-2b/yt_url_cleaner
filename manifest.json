@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube BS Cleaner",
+    "description": "Removes the extra share parameters from YouTube links",
+    "version": "1.0.0",
+    "homepage_url": "https://github.com/novaex-2b/yt_url_cleaner",
+
+    "icons": {
+      "16": "icon-remove_url_parameters-16.svg"
+    },
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "clipboardWrite"
+    ],    
+
+    "commands": {
+        "copy_current_clean_url": {
+            "suggested_key": { "default": "Ctrl+Alt+C" },
+            "description": "Copies URL of current tab and removes all parameters"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fuckyoutube@gmail.com",
+      "strict_min_version": "42.0"
+    }
+  }
+}
